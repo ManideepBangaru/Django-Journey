@@ -7,7 +7,7 @@ from django.http import HttpResponse
 #     return HttpResponse("<h1>Hello Manoj !!!, I'm Django</h1>")
 
 def home(request):
-    return render(request, "home.html",{'name':'Shravani'})
+    return render(request, "home.html",{'name':'Manideep'})
 
 def add(request):
     operationType = "Addition"
