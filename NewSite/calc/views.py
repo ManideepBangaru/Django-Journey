@@ -22,3 +22,10 @@ def Subtract(request):
     val2 = int(request.POST['num2'])
     subvalue = val1 - val2
     return render(request, "result.html", {'result': subvalue, "val1" : val1, "val2":val2,"op":operationType})
+
+def Multiply(request):
+    operationType = "Multiplication"
+    val1 = int(request.POST['num1'])
+    val2 = int(request.POST['num2'])
+    MulValue = val1 * val2
+    return render(request, "result.html" , {'result': MulValue, "val1":val1, "val2": val2, "op": operationType})
