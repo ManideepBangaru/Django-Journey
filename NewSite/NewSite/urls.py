@@ -24,4 +24,5 @@ urlpatterns = [
     path('',views.home,name="home"),
     path('add',views.add,name="AdditionResultPage"),
     path('Subtract',views.Subtract,name="SubtractResultPage"),
+    path('Multiply',views.Multiply,name="MultiplicationResultPage"),
 ]
