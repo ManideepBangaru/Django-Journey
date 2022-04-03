@@ -17,12 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 # Importing Apps we created
-from calc import views
+from calc import views as CalcViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home,name="home"),
-    path('add',views.add,name="AdditionResultPage"),
-    path('Subtract',views.Subtract,name="SubtractResultPage"),
-    path('Multiply',views.Multiply,name="MultiplicationResultPage"),
+    path('',CalcViews.home,name="home"),
+    path('add',CalcViews.add,name="AdditionResultPage"),
+    path('Subtract',CalcViews.Subtract,name="SubtractResultPage"),
+    path('Multiply',CalcViews.Multiply,name="MultiplicationResultPage"),
 ]
