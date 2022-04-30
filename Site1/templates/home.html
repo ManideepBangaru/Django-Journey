@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Home</title>
+</head>
+<body>
+<h3>This page is created by {{name}} for Calculator </h3>
+<hr>
+<h4> Addition </h4>
+<form action="add" method="post">
+    {% csrf_token %}
+    Enter 1st number  = <input type = 'text' name = 'num1'><br>
+    Enter 2nd number  = <input type = 'text' name = 'num2'><br>
+    <input type="submit">
+</form>
+<br>
+<hr>
+<h4> Subtraction </h4>
+<form action="Subtract" method="post">
+    {% csrf_token %}
+    Enter 1st number = <input type = 'text' name = 'num1'><br>
+    Enter 2nd number = <input type = 'text' name = 'num2'><br>
+    <input type="submit">
+</form>
+<h4> Multiplication </h4>
+<form action = "Multiply" method="post">
+    {% csrf_token %}
+    Enter 1st number = <input type="text" name="num1"><br>
+    Enter 2nd number = <input type="text" name="num2"><br>
+    <input type = "submit">
+</form>
+</body>
+</html>
+{% endblock %}
