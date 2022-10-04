@@ -21,5 +21,5 @@ from calc import views as calcViews
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("hello/", calcViews.hello_world),
+    path("", calcViews.hello_world),
 ]
